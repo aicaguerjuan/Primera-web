@@ -57,6 +57,7 @@ header {
   font-size: 35px;
   z-index: 101; /* para que este sobre el header*/
   cursor: pointer; /* para que aparezca la manito cuando pasamos el mouse*/
+  display: none;
 }
 
 #menu-toggle {
@@ -271,11 +272,8 @@ transition: all .5s ease-out;
   margin: 7px 0;
 }
 
-#menu-toggle:checked + label.menu-icon-action + ul{
+.navlist.open{
   right: 0;
 }
-
-
-
 }
 
